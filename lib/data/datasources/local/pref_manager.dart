@@ -28,13 +28,11 @@ class PrefManager {
   String kLocale = "locale";
   String kTheme = "theme";
 
-  /// Light, Dark ,System
 
   SharedPreferences preferences;
 
   PrefManager(this.preferences);
 
-  //for Bloc.Bloc.login
   set isLogin(bool value) => preferences.setBool(kIsLogin, value);
 
   bool get isLogin => preferences.getBool(kIsLogin) ?? false;
@@ -63,17 +61,16 @@ class PrefManager {
 
   String? get icon => preferences.getString(kIcon);
 
-  /// Default locale set to English
   set locale(String? value) => preferences.setString(kLocale, value ?? "en");
 
   String get locale => preferences.getString(kLocale) ?? "en";
 
-  /// Default locale set to English
   set theme(String? value) =>
-      preferences.setString(kTheme, value ?? describeEnum(ActiveTheme.system));
+      preferences.setString(kTheme, value ?? ActiveTheme.system.name);
 
   String get theme =>
-      preferences.getString(kTheme) ?? describeEnum(ActiveTheme.system);
+      preferences.getString(kTheme) ?? ActiveTheme.system.name;
+
 
   void logout() => preferences.clear();
 }
