@@ -77,7 +77,7 @@ class ServicesDescription extends StatelessWidget {
                       const SpacerV(),
                       Text(
                         e.desc ?? "",
-                        style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
                               fontWeight: FontWeight.w300,
                               fontSize: responsiveSize(
                                 context,
@@ -115,8 +115,8 @@ class ServicesDescription extends StatelessWidget {
                     opacity: 0.05,
                     child: Text(
                       e.title ?? "",
-                      style: Theme.of(context).textTheme.headline4?.copyWith(
-                            fontSize: Dimens.space36,
+                      style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                            fontSize: Dimens.space36
                           ),
                     ),
                   ),
@@ -127,7 +127,7 @@ class ServicesDescription extends StatelessWidget {
                     e.title ?? "",
                     style: Theme.of(context)
                         .textTheme
-                        .headline5
+                        .headlineMedium
                         ?.copyWith(fontSize: Dimens.space30),
                   ),
                 ),
@@ -153,7 +153,7 @@ class ServicesDescription extends StatelessWidget {
                   opacity: 0.05,
                   child: Text(
                     e.title ?? "",
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                 ),
               ),
@@ -161,7 +161,7 @@ class ServicesDescription extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   e.title ?? "",
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineLarge,
                 ),
               ),
             ],

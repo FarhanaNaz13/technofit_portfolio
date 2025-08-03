@@ -48,7 +48,7 @@ class ProfileDescription extends StatelessWidget {
             children: [
               AnimatedTextBox(
                 text: Strings.of(context)!.hello,
-                textStyle: Theme.of(context).textTheme.headline1!.copyWith(
+                textStyle: Theme.of(context).textTheme.titleLarge!.copyWith(
                       fontSize: responsiveSize(
                         context,
                         Dimens.space36,
@@ -70,7 +70,7 @@ class ProfileDescription extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(
                     text: Strings.of(context)!.profileTitle,
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontSize: responsiveSize(
                             context,
                             Dimens.body1,
@@ -81,7 +81,7 @@ class ProfileDescription extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: Strings.of(context)!.profileDesc,
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                               fontSize: responsiveSize(
                                 context,
                                 Dimens.body2,

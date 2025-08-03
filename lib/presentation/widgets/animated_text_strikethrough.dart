@@ -81,7 +81,7 @@ class _AnimatedTextStrikethroughState extends State<AnimatedTextStrikethrough>
               top: (_textHeight / 2) - widget.thickness,
               child: Container(
                 height: widget.thickness,
-                color: Theme.of(context).textTheme.bodyText1?.color,
+                color: Theme.of(context).textTheme.bodyLarge?.color,
                 width: _forwardAnimation.value,
               ),
             ),

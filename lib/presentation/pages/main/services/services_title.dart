@@ -44,7 +44,7 @@ class ServicesTitle extends StatelessWidget {
             ),
             child: Text(
               Strings.of(context)!.services,
-              style: Theme.of(context).textTheme.headline1?.copyWith(
+              style: Theme.of(context).textTheme.displayLarge?.copyWith(
                     fontSize: responsiveSize(
                       context,
                       Dimens.space36,

@@ -24,7 +24,7 @@ class ProfileButton extends StatelessWidget {
       DataHelper(
         title: Constants.get.github,
         iconPath: Images.icGithub,
-        iconColor: Theme.of(context).textTheme.bodyText1?.color,
+        iconColor: Theme.of(context).textTheme.bodyLarge?.color,
         url: Constants.get.githubUrl,
       ),
     ];
@@ -42,11 +42,11 @@ class ProfileButton extends StatelessWidget {
                   text: element.value.title ?? "",
                   textStyle: Theme.of(context)
                       .textTheme
-                      .bodyText1!
+                      .bodyLarge!
                       .copyWith(decoration: TextDecoration.underline),
                   textStyleHover: Theme.of(context)
                       .textTheme
-                      .bodyText1!
+                      .bodyLarge!
                       .copyWith(fontWeight: FontWeight.w500),
                   duration: const Duration(milliseconds: 400),
                   onTap: () {
@@ -59,7 +59,7 @@ class ProfileButton extends StatelessWidget {
                     "/",
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .bodyLarge
                         ?.copyWith(fontWeight: FontWeight.normal),
                   ),
                 }

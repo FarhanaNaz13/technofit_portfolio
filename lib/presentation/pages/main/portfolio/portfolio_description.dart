@@ -255,7 +255,7 @@ class _PortfolioDescriptionState extends State<PortfolioDescription> {
                     Expanded(
                       child: Text(
                         _portfolio[index].title!,
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                               color: Palette.white,
                               fontWeight: FontWeight.w500,
                             ),
@@ -332,7 +332,7 @@ class _PortfolioDescriptionState extends State<PortfolioDescription> {
             children: [
               Text(
                 _portfolio[index].descriptions ?? "",
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               Align(
                 alignment: Alignment.bottomLeft,
@@ -347,13 +347,13 @@ class _PortfolioDescriptionState extends State<PortfolioDescription> {
                       children: [
                         Text(
                           Strings.of(context)!.tags,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         for (final String item in _portfolio[index].tag ?? [])
                           Chip(
                             label: Text(
                               item,
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodySmall,
                             ),
                           )
                       ],

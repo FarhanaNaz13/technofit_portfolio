@@ -8,13 +8,6 @@ import 'package:technofit/presentation/pages/main/main_popup_menu.dart';
 import 'package:technofit/presentation/presentation.dart';
 import 'package:technofit/utils/utils.dart';
 
-///*********************************************
-/// Created by ukietux on 25/08/20 with ♥
-/// (>’_’)> email : ukie.tux@gmail.com
-/// github : https://www.github.com/Lzyct <(’_’<)
-///*********************************************
-/// © 2020 | All Right Reserved
-
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
@@ -118,7 +111,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     return Title(
       title:
           "${Constants.get.appName} | ${_listAppbarMenu[_selectedMenu].title}",
-      color: Theme.of(context).textTheme.bodyText1!.color!,
+      color: Theme.of(context).textTheme.bodyLarge!.color!,
       child: Parent(
         scaffoldKey: _scaffoldKey,
         drawer: Responsive.isMobile(context)

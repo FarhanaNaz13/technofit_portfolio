@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:technofit/data/data.dart';
@@ -48,7 +49,7 @@ extension ContextExtensions on BuildContext {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     title,
-                    style: Theme.of(this).textTheme.headline6,
+                    style: Theme.of(this).textTheme.titleLarge,
                     textAlign: TextAlign.left,
                   ),
                 ),
@@ -72,7 +73,6 @@ extension ContextExtensions on BuildContext {
     return MediaQuery.of(this).size.height * toDouble;
   }
 
-  // Handle dialog
   Future<void> dialog({required List<Widget> children, String? title}) =>
       showDialog(
         context: this,
@@ -94,7 +94,7 @@ extension ContextExtensions on BuildContext {
                         children: [
                           Text(
                             title ?? "",
-                            style: Theme.of(this).textTheme.headline6,
+                            style: Theme.of(this).textTheme.titleLarge,
                           ),
                           IconButton(
                             icon: const Icon(Icons.close),
@@ -139,12 +139,12 @@ extension ContextExtensions on BuildContext {
               child: Center(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Theme.of(this).backgroundColor,
+                    color: Theme.of(ctx).colorScheme.surface,
                     borderRadius: BorderRadius.circular(Dimens.cornerRadius),
                   ),
                   margin: EdgeInsets.symmetric(horizontal: Dimens.space30),
                   padding: EdgeInsets.all(Dimens.space24),
-                  child: Wrap(children: const [CupertinoActivityIndicator()]),
+                  child: const Wrap(children: [CupertinoActivityIndicator()]),
                 ),
               ),
             ),
@@ -158,10 +158,8 @@ extension ContextExtensions on BuildContext {
     } catch (_) {}
   }
 
-  //End Loading Dialog
 
   void logout() {
-    //clear shared Preferences
     sl<PrefManager>().logout();
   }
 }

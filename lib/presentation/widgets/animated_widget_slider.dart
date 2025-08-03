@@ -60,7 +60,7 @@ class AnimatedWidgetSlider extends AnimatedWidget {
                 shape: boxShape,
                 color: controller.isCompleted
                     ? Colors.transparent
-                    : Theme.of(context).textTheme.bodyText1?.color,
+                    : Theme.of(context).textTheme.bodyLarge?.color,
               ),
             ),
           ),

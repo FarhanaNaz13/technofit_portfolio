@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technofit/presentation/presentation.dart';
 
-///*********************************************
-/// Created by ukieTux on 23/04/2020 with ♥
-/// (>’_’)> email : ukie.tux@gmail.com
-/// github : https://www.github.com/Lzyct <(’_’<)
-///*********************************************
-/// © 2020 | All Right Reserved
 class Button extends StatefulWidget {
   final String title;
   final VoidCallback onPressed;
@@ -115,7 +109,7 @@ class _ButtonState extends State<Button> with SingleTickerProviderStateMixin {
                     child: widget.child ??
                         Text(
                           widget.title.toUpperCase(),
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.labelLarge,
                         ),
                   ),
                 ),

@@ -24,7 +24,7 @@ class HomeDescription extends StatelessWidget {
             animationController: animationController,
             text: "${Constants.get.appName}.",
             maxLines: 3,
-            textStyle: Theme.of(context).textTheme.headline1!.copyWith(
+            textStyle: Theme.of(context).textTheme.displayLarge!.copyWith(
                   fontSize: responsiveSize(
                     context,
                     Dimens.space36,
@@ -38,7 +38,7 @@ class HomeDescription extends StatelessWidget {
             text: Strings.of(context)!.appDesc,
             heightFactor: responsiveSize(context, 2, 1),
             maxLines: responsiveSize(context, 2, 1).toInt(),
-            textStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
+            textStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
                   fontSize: responsiveSize(
                     context,
                     Dimens.body2,

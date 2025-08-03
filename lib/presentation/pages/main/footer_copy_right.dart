@@ -18,7 +18,7 @@ class FooterCopyRight extends StatelessWidget {
         children: [
           Text(
             "\u00a9 ${DateTime.now().year} ${Constants.get.appName}",
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
@@ -26,12 +26,12 @@ class FooterCopyRight extends StatelessWidget {
             children: [
               Text(
                 "${Strings.of(context)!.createdWith} ",
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const Icon(Icons.favorite, color: Palette.red),
               Text(
                 " ${Strings.of(context)!.and} ",
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const FlutterLogo(),
             ],

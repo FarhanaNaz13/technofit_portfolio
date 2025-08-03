@@ -56,7 +56,7 @@ class AnimatedBoxSlider extends AnimatedWidget {
               height: height - (_hiddenFactor * 2),
               color: controller.isCompleted
                   ? Colors.transparent
-                  : Theme.of(context).textTheme.bodyText1?.color,
+                  : Theme.of(context).textTheme.bodyLarge?.color,
             ),
           ),
           Positioned(

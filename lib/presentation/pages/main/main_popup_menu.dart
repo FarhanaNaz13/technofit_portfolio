@@ -53,7 +53,7 @@ class MainPopupMenu extends StatelessWidget {
                           _getThemeName(data, context),
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodyLarge
                               ?.copyWith(fontWeight: FontWeight.normal),
                         ),
                       ],
@@ -70,7 +70,7 @@ class MainPopupMenu extends StatelessWidget {
                     textAlign: TextAlign.right,
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .bodyLarge
                         ?.copyWith(fontWeight: FontWeight.normal),
                   ),
                   const Spacer(),
@@ -103,7 +103,7 @@ class MainPopupMenu extends StatelessWidget {
                     },
                     child: Text(
                       data.title ?? "-",
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 )
@@ -116,7 +116,7 @@ class MainPopupMenu extends StatelessWidget {
                     Strings.of(context)!.chooseLanguage,
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .bodyLarge
                         ?.copyWith(fontWeight: FontWeight.normal),
                   ),
                   const Spacer(),

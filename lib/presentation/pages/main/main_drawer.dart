@@ -110,14 +110,14 @@ class _MainDrawerState extends State<MainDrawer> {
                                     (data.type ?? "-").toUpperCase(),
                                     style: Theme.of(context)
                                         .textTheme
-                                        .subtitle1
+                                        .titleLarge
                                         ?.copyWith(
                                           color: data.type ==
                                                   sl<PrefManager>().locale
                                               ? Palette.primary
                                               : Theme.of(context)
                                                   .textTheme
-                                                  .bodyText1
+                                                  .bodyLarge
                                                   ?.color,
                                         ),
                                   ),
@@ -172,7 +172,7 @@ class _MainDrawerState extends State<MainDrawer> {
                                       e.value.title ?? "",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6
+                                          .titleLarge
                                           ?.copyWith(
                                             fontSize: Dimens.space42,
                                           ),
@@ -190,7 +190,7 @@ class _MainDrawerState extends State<MainDrawer> {
                                       e.value.title ?? "",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .subtitle1
+                                          .titleLarge
                                           ?.copyWith(
                                             fontSize: Dimens.h4,
                                             fontWeight: FontWeight.normal,

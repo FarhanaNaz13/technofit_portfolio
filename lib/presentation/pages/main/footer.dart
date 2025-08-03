@@ -48,7 +48,7 @@ class _FooterState extends State<Footer> {
       DataHelper(
         iconPath: Images.icGithub,
         url: Constants.get.githubCommunityUrl,
-        iconColor: Theme.of(context).textTheme.bodyText1?.color,
+        iconColor: Theme.of(context).textTheme.bodyLarge?.color,
       ),
       DataHelper(
         iconPath: Images.icFacebook,
@@ -62,7 +62,7 @@ class _FooterState extends State<Footer> {
       DataHelper(
         iconPath: Images.icTiktok,
         url: Constants.get.tiktokUrl,
-        iconColor: Theme.of(context).textTheme.bodyText1?.color,
+        iconColor: Theme.of(context).textTheme.bodyLarge?.color,
       ),
       DataHelper(
         iconPath: Images.icYoutube,
@@ -116,7 +116,7 @@ class _FooterState extends State<Footer> {
               Strings.of(context)!.support,
               style: Theme.of(context)
                   .textTheme
-                  .bodyText1
+                  .bodyLarge
                   ?.copyWith(fontWeight: FontWeight.normal),
             ),
             const SpacerV(),
@@ -129,7 +129,7 @@ class _FooterState extends State<Footer> {
                       onPressed: () => launchUrlString(e.url!),
                       child: Text(
                         e.title ?? "",
-                        style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               color: Palette.primary,
                             ),
                       ),
@@ -148,7 +148,7 @@ class _FooterState extends State<Footer> {
             Strings.of(context)!.socialMedia,
             style: Theme.of(context)
                 .textTheme
-                .bodyText1
+                .bodyLarge
                 ?.copyWith(fontWeight: FontWeight.normal),
           ),
           const SpacerV(),

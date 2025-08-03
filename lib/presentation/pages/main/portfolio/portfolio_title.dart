@@ -47,7 +47,7 @@ class PortfolioTitle extends StatelessWidget {
               children: [
                 Text(
                   Strings.of(context)!.portfolio,
-                  style: Theme.of(context).textTheme.headline1?.copyWith(
+                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
                         fontSize: responsiveSize(
                           context,
                           Dimens.space36,
@@ -58,7 +58,7 @@ class PortfolioTitle extends StatelessWidget {
                 ),
                 Text(
                   Strings.of(context)!.portfolioDesc,
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize:
                             responsiveSize(context, Dimens.body1, Dimens.h6),
                       ),

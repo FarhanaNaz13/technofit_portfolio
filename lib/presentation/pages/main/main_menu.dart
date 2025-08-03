@@ -44,10 +44,10 @@ class _MainMenuState extends State<MainMenu> {
               ),
               AnimatedTextStrikethrough(
                 text: e.value.title ?? "",
-                textStyle: Theme.of(context).textTheme.bodyText1!,
+                textStyle: Theme.of(context).textTheme.bodyLarge!,
                 textStyleHover: Theme.of(context)
                     .textTheme
-                    .bodyText1!
+                    .bodyLarge!
                     .copyWith(fontWeight: FontWeight.w500),
                 duration: Duration(milliseconds: widget.duration),
                 onTap: () {
