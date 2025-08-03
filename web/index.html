@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="/">
+    <base href="$FLUTTER_BASE_HREF">
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -18,25 +18,31 @@
     <title>TechnoFit</title>
     <link rel="manifest" href="manifest.json">
 
-    <!-- This script adds the flutter initialization JS code -->
+    <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = {{flutter_service_worker_version}};
+
+    </script>
     <script src="flutter.js" defer></script>
     <style> flt-glass-pane * p { image-rendering: pixelated; } </style>
 </head>
 <body>
 
 <script>
-  window.addEventListener('load', function(ev) {
-    // Download main.dart.js
-    _flutter.loader.load({
-      serviceWorker: {
-        serviceWorkerVersion: '{{flutter_service_worker_version}}',
-      }
-    }).then(function(engineInitializer) {
-      return engineInitializer.initializeEngine();
-    }).then(function(appRunner) {
-      return appRunner.runApp();
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
     });
-  });
+
+
 </script>
 </body>
 </html>

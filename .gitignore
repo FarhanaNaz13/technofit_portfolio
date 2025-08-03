@@ -29,6 +29,7 @@
 .packages
 .pub-cache/
 .pub/
+.fvm
 /build/
 lib/core/localization/generated
 

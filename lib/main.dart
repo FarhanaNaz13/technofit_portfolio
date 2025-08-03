@@ -14,7 +14,6 @@ import 'package:technofit/utils/utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
-  /// Register Service locator
 
   WidgetsFlutterBinding.ensureInitialized();
   await serviceLocator();
@@ -27,7 +26,6 @@ Future<void> main() async {
         DeviceOrientation.portraitDown,
       ],
     ).then((_) async {
-      /// Load SharedPref before load My App Widget
       SharedPreferences.getInstance().then((value) {
         initPrefManager(value);
         setUrlStrategy(PathUrlStrategy());
@@ -83,7 +81,6 @@ class LzyctApp extends StatelessWidget {
             useInheritedMediaQuery: true,
             themeMode: data.activeTheme.mode,
 
-            /// Check if theme is light or dark first
           );
         },
       ),
